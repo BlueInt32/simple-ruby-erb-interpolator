@@ -15,3 +15,5 @@
 ```
 ruby interpolate.rb tpl.erb data.rb
 ```
+
+Some docs about `.erb` - https://github.com/ruby/erb

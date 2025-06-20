@@ -16,6 +16,6 @@ p $data
 
 file = File.open(template_file)
 template_file_content = file.read
-template = ERB.new(template_file_content)
+template = ERB.new(template_file_content, trim_mode: '-') # trim_mode '-' is necessary to allow -%> ending tags, auto-removing the EOLs from output
 # p template_file_content
 puts template.result(binding)

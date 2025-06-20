@@ -1,4 +1,5 @@
 --- TPL ---
-<% $data[:beverages].each do |key, value| %>
-  - <%= key %> is <%= value[:size] %>\n
+<% count = 1 -%>
+<% $data[:beverages].each do |key, value| -%>
+  - <%= count %>. <%= key %> is <%= value[:size] %><% count +=1 %>
 <% end %>
